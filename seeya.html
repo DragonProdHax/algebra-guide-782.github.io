@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExtPrint3r</title>
+    <title>.</title>
     <meta name="title" content="ExtPrint3r">
     <meta name="description" content="ExtPrint3r is an exploit created by Blobby Boi with the goal of being the successor to ExtHang3r. The exploit recreates the behavior of the LTMEAT Print method by flooding iframes and then printing the page. For whatever reason, printing a page with a ton of iframes hangs the embedded page rather than the page who embedded it. This is exactly what ExtPrint3r exploits, since it also works with extension pages (as long they are under web_accessible_resources). This seems to be much more consistent than other extension-freezing methods, and it also lasts for a longer period of time.">
     <meta name="keywords" content="school blocker bypass, bypasser, bypass school, bypass blocker, securly bypass, goguardian bypass, hapara bypass, lightspeed bypass, lightspeed filter agent bypass, school unblocker, school blocker, unblocker, ext-remover, exthang3r, blobby-boi, ltmeat, ltbeef">
@@ -12,8 +12,8 @@
     <meta name="author" content="Blobby Boi">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://extprint3r.github.io/">
-    <meta property="og:title" content="ExtPrint3r">
-    <meta property="og:description" content="ExtPrint3r is an exploit created by Blobby Boi with the goal of being the successor to ExtHang3r. The exploit recreates the behavior of the LTMEAT Print method by flooding iframes and then printing the page. For whatever reason, printing a page with a ton of iframes hangs the embedded page rather than the page who embedded it. This is exactly what ExtPrint3r exploits, since it also works with extension pages (as long they are under web_accessible_resources). This seems to be much more consistent than other extension-freezing methods, and it also lasts for a longer period of time.">
+    <meta property="og:title" content=".">
+    <meta property="og:description" content=". is an exploit created by Blobby Boi with the goal of being the successor to ExtHang3r. The exploit recreates the behavior of the LTMEAT Print method by flooding iframes and then printing the page. For whatever reason, printing a page with a ton of iframes hangs the embedded page rather than the page who embedded it. This is exactly what ExtPrint3r exploits, since it also works with extension pages (as long they are under web_accessible_resources). This seems to be much more consistent than other extension-freezing methods, and it also lasts for a longer period of time.">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://extprint3r.github.io">
     <meta property="twitter:title" content="ExtPrint3r">
@@ -312,14 +312,13 @@
 <body>
     <div class="side-panel">
     	<div style="display: flex; align-items: center;">
-            <img src="https://raw.githubusercontent.com/Blobby-Boi/ExtPrint3r/refs/heads/main/icon.png" width="50px" height="50px" style="margin-right: 10px;">
-            <h2>ExtPrint3r</h2>
+            <img src="/images/cool.png" width="50px" height="50px" style="margin-right: 10px;">
+            <h2>School Work</h2>
     	</div>
         <div class="option" data-name="printer-tab">The Exploit</div>
         <div class="option" data-name="settings-tab">Settings</div>
         <div class="option" data-name="about-tab">About</div>
         <div style="border-top: 1px solid #444; margin-top: 10px; padding-top: 10px; width: 100%;"></div>
-        <p style="text-align: center; margin-left: -10px; user-select: none;">Made by <a href="https://github.com/Blobby-Boi/" target="_blank">Blobby Boi</a></p>
     </div>
     <div class="main-content">
         <div id="printer-tab">
@@ -327,13 +326,10 @@
             <div id="div-container"></div>
 	</div>
 	<div id="about-tab" style="display: none;">
-       	    <h2 style="user-select: none;">About ExtPrint3r</h2>
-            <p style="user-select: none; line-height: 1.5;"><b>ExtPrint3r</b> is an exploit created by <a href="https://github.com/Blobby-Boi/" target="_blank">Blobby Boi</a> with the goal of being the successor to <b>ExtHang3r</b>. The exploit recreates the behavior of the <b>LTMEAT Print</b> method by flooding iframes and then printing the page. For whatever reason, printing a page with a ton of iframes hangs the embedded page rather than the page who embedded it. This is exactly what ExtPrint3r exploits, since it also works with extension pages (as long as they are under web_accessible_resources). This seems to be much more consistent than other extension-freezing methods, and it also lasts for a longer period of time.</p>
+       	    <h2 style="user-select: none;">About School Work</h2>Follow The instructions below to use the exploit CORRECTLY.
+            <p style="user-select: none; line-height: 1.5;">
             <div style="border-top: 1px solid #444; margin-bottom: 10px; margin-top: 20px; padding-top: 10px; width: 100%;"></div>
-            <div id="contributor-content" style="display:none;">
-                <h3 style="margin-left: 5px">Contributors</h3>
-                <div id="contributor-list"></div>
-            </div>
+    
     </div>
    	<div id="settings-tab" style="display: none;">
             <h2 style="user-select: none;">Settings</h2>
@@ -347,7 +343,7 @@
             </div>
         </div>
     </div>
-    <script>	    
+    <script>	        
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 let label = document.createElement("label");
@@ -765,7 +761,7 @@
             header.appendChild(x);
 
             const instructions = document.createElement("p");
-            const settingsUrl = "chrome://extensions?id=" + extId;
+            const settingsUrl = `<a href="chrome://extensions?id=${extId}" target="_blank">chrome://extensions?id=${extId}</a>`;
             instructions.innerHTML = "Open the following URL in a new tab:<br><br><span>" + settingsUrl + "</span><br><br> Then go back to this one and press the button below which will open a new tab. Immediately press ctrl+tab and start spamming the switch called \"Allow Access to file URLs\" for about 5 seconds. Once you are done, close that tab and switch to the other one. Then, press cancel on the print dialog and the tab should close. If done correctly, the extension " + extName + " should've been killed.";
             instructions.style.padding = "15px";
             instructions.style.textAlign = "center";
@@ -776,7 +772,7 @@
             buttonContainer.style.padding = "10px";
 
             const printButton = document.createElement("button");
-            printButton.textContent = "The Print3r";
+            printButton.textContent = "Start Configuration";
             printButton.style.width = "100px";
             printButton.style.marginTop = "-15px";
             printButton.style.marginBottom = "15px";
